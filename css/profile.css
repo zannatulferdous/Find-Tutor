@@ -1,0 +1,107 @@
+
+.col-1 {
+float:left;
+width:25%;
+padding-left:60px;
+background-color:#fff;
+}
+.col-2{
+float:left;
+width: 68%;
+background-color:#fff;
+
+padding-left:60px;
+	padding-right: 50px;
+	position:absolute;
+	top:10%;
+	left:32%;
+
+}
+/*.col-2 input{
+width:320px;
+height:30px;
+padding:10px;
+margin-top:8px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:15px;
+font-family:raleway;
+display:block;
+}
+.col-2 add{
+   width:320px;
+height:30px;
+padding:10px;
+margin-top:8px;
+border:1px solid #ccc;
+padding-left:5px;
+  font-family:raleway;
+  font-size:15px; 
+}
+.col-2 select{
+    width:320px;
+height:30px;
+margin-top:8px;
+border:1px solid #ccc;
+padding-left:5px;
+  font-family:raleway;
+  font-size:15px;
+}
+.col-2 submit{
+margin-top:8px;
+background-color:black;
+color:#fff;
+border:2px solid #FFCB00;
+padding:10px;
+font-size:30px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:15px;
+}*/
+.left{
+height:1000px;
+}
+.right{
+height:1000px;
+}
+.col-1 ul li {
+
+               padding: 15px 10px;
+               color: rgba(230,230,230,0.9);
+               list-style: none;
+               border-bottom: 1px solid rgba(100,100,100,0.3);
+               cursor:pointer;
+                   color: #93c83f;
+    background-color: transparent;
+    font-weight: 600;
+}
+.col-1 ul li a{
+  
+list-style: none;
+text-decoration:none;
+	         display:block;
+                 color:black;
+}
+.col-1 ul li a.active,.col-1 ul li a:hover,
+.col-1 ul li a:focus {
+    color: #93c83f;
+    background-color: transparent;
+    display: block;
+    font-weight: 600;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.col-2 ul li {
+
+               padding: 15px 10px;
+               display:block;
+                 color:black;
+               /*color: rgba(230,230,230,0.9);*/
+               list-style: none;
+               border-bottom: 1px solid rgba(100,100,100,0.3);
+              
+}
+

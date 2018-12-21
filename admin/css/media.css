@@ -1,0 +1,38 @@
+/*extra small devices {ar vitor code ligta hoi} */
+
+@media (max-width:767px){
+    .login{
+				width: 730px !important;
+				background: white;
+				margin: 0 auto;
+				
+				border-radius:10px;
+                margin-bottom: 50px;
+				}
+
+}
+/*small devices */
+@media (min-width:768px) and (max-width:991px){
+    .login{
+				width: 500px !important;
+				background: white;
+				margin: 0 auto;
+				
+				border-radius:10px;
+                margin-bottom: 50px;
+				}
+}
+/*medium devices */
+@media (min-width:992px) and (max-width:1199px){
+   .login{
+				width: 800px !important;
+				background: white;
+				margin: 0 auto;
+				
+				border-radius:10px;
+                margin-bottom: 50px;
+				}
+}
+/*large devices */
+@media (min-width:1200px) {
+}

@@ -1,0 +1,11 @@
+p.error_message{
+    font-weight: 400 !important;
+    color: #bb0000 !important;
+    font-size: 13px !important;
+    /*margin-top: -17px; */
+    padding-left: 5px;
+    margin-bottom: 0;
+}
+.error_input{
+	border: 1px solid #bb0000 !important;
+}

@@ -1,0 +1,112 @@
+/*Custom Style here*/
+
+
+#full_content{
+    
+    
+    
+}
+/*
+#body1{
+    background-image: url(../Images/oceanwave.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+*/
+    
+}
+/*
+#body2{
+    background-color: black;
+*/
+
+#image_sliders{
+    
+/*
+    background-image: url(../images/oceanwave.jpg);
+    background-repeat: no-repeat;
+*/
+    
+}
+
+.login_btn{
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    width: 100px;
+    height: 35px;
+    background: white;
+    cursor: pointer;
+    transform: translateX(-50%) translateY(-50%);
+}
+.login_btn p{
+    color: #4CAF50;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+.form-group label{
+    color: #4CAF50;
+}
+.form-group{
+padding-top: 20px;
+}
+#form{
+    width: 350px;
+    margin: 0 auto;
+    display: none;
+}
+.custom_btn{
+    width: 150px;
+    margin-top: 20px;
+}
+
+.red{
+    
+    
+    
+    color: red;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.orange{
+   
+    color: Orange;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.green{
+    color: Green;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.new_slider img{
+    
+    height: 600px;
+    width: 100%;
+}
+
+
+.ui-tabs-anchor{
+    font-size: 30px !important;
+    text-align: center !important;
+    padding-left: 0px !important;
+}
+
+.ui-tabs-anchor a{
+    color:red;
+    text-align: center;
+}
+
+#tab{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+

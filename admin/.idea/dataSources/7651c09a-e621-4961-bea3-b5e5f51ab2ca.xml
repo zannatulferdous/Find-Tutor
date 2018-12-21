@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="accounts@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="accounts">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="abc"/>
+    <schema id="4" parent="1" name="adbd_bot"/>
+    <schema id="5" parent="1" name="ajaxtest"/>
+    <schema id="6" parent="1" name="blogsite"/>
+    <schema id="7" parent="1" name="cms"/>
+    <schema id="8" parent="1" name="email_taken"/>
+    <schema id="9" parent="1" name="employee"/>
+    <schema id="10" parent="1" name="forminsert"/>
+    <schema id="11" parent="1" name="health"/>
+    <schema id="12" parent="1" name="info"/>
+    <schema id="13" parent="1" name="information"/>
+    <schema id="14" parent="1" name="informationn"/>
+    <schema id="15" parent="1" name="information_schema"/>
+    <schema id="16" parent="1" name="janina"/>
+    <schema id="17" parent="1" name="library"/>
+    <schema id="18" parent="1" name="loginpage"/>
+    <schema id="19" parent="1" name="lsreport"/>
+    <schema id="20" parent="1" name="m"/>
+    <schema id="21" parent="1" name="masterdetails"/>
+    <schema id="22" parent="1" name="medicale"/>
+    <schema id="23" parent="1" name="medicalee"/>
+    <schema id="24" parent="1" name="mysql"/>
+    <schema id="25" parent="1" name="object"/>
+    <schema id="26" parent="1" name="performance_schema"/>
+    <schema id="27" parent="1" name="phonebook"/>
+    <schema id="28" parent="1" name="phpmyadmin"/>
+    <schema id="29" parent="1" name="register"/>
+    <schema id="30" parent="1" name="report"/>
+    <schema id="31" parent="1" name="rokto_sheba"/>
+    <schema id="32" parent="1" name="service_management"/>
+    <schema id="33" parent="1" name="smartmedicale"/>
+    <schema id="34" parent="1" name="stock"/>
+    <schema id="35" parent="1" name="student"/>
+    <schema id="36" parent="1" name="test"/>
+    <table id="37" parent="2" name="bill_type"/>
+    <table id="38" parent="2" name="employee_details"/>
+    <table id="39" parent="2" name="employee_master"/>
+    <table id="40" parent="2" name="xxx_user"/>
+    <column id="41" parent="37" name="BILL_TYPE_NO">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="42" parent="37" name="BILL_TYPE_NAME">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="37" name="CREATED_BY">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="37" name="CREATED_ON">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="37" name="IS_DELETED">
+      <Position>5</Position>
+      <DataType>int(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="46" parent="37" name="DELETED_BY">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="37" name="DELETED_ON">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="37" name="IS_UPDATED">
+      <Position>8</Position>
+      <DataType>int(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="49" parent="37" name="UPDATED_BY">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="37" name="UPDATED_ON">
+      <Position>10</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="51" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>BILL_TYPE_NO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="38" name="EMPLOYEE_DETAILS_NO">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="38" name="EMAIL">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="38" name="PHONE">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="38" name="EMPLOYEE_MID">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="38" name="ADDRESS">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="57" parent="38" name="employee_details_employee_master_EMPLOYEE_MID_fk">
+      <ColNames>EMPLOYEE_MID</ColNames>
+    </index>
+    <key id="58" parent="38" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EMPLOYEE_DETAILS_NO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="59" parent="38" name="employee_details_employee_master_EMPLOYEE_MID_fk">
+      <ColNames>EMPLOYEE_MID</ColNames>
+      <RefSchemaName>accounts</RefSchemaName>
+      <RefTableName>employee_master</RefTableName>
+      <RefColNames>EMPLOYEE_MID</RefColNames>
+    </foreign-key>
+    <column id="60" parent="39" name="EMPLOYEE_MID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="61" parent="39" name="EMPLOYEE_NAME">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="62" parent="39" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EMPLOYEE_MID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="63" parent="40" name="user_no">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="64" parent="40" name="user_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="40" name="pass">
+      <Position>3</Position>
+      <DataType>varchar(500)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="40" name="user_full_name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="40" name="user_email">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="40" name="user_contact">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="40" name="is_active">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="40" name="active_from">
+      <Position>8</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="40" name="active_to">
+      <Position>9</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="72" parent="40" name="USER_EMAIL">
+      <ColNames>user_email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="73" parent="40" name="USER_FULL_NAME">
+      <ColNames>user_full_name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="74" parent="40" name="USER_NAME">
+      <ColNames>user_name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="75" parent="40" name="USER_NO">
+      <ColNames>user_no</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="76" parent="40" name="USER_NO_2">
+      <ColNames>user_no</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="77" parent="40" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>user_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="78" parent="40" name="USER_NO">
+      <ColNames>user_no</ColNames>
+      <UnderlyingIndexName>USER_NO</UnderlyingIndexName>
+    </key>
+    <key id="79" parent="40" name="USER_NO_2">
+      <ColNames>user_no</ColNames>
+      <UnderlyingIndexName>USER_NO_2</UnderlyingIndexName>
+    </key>
+    <key id="80" parent="40" name="USER_NAME">
+      <ColNames>user_name</ColNames>
+      <UnderlyingIndexName>USER_NAME</UnderlyingIndexName>
+    </key>
+    <key id="81" parent="40" name="USER_FULL_NAME">
+      <ColNames>user_full_name</ColNames>
+      <UnderlyingIndexName>USER_FULL_NAME</UnderlyingIndexName>
+    </key>
+    <key id="82" parent="40" name="USER_EMAIL">
+      <ColNames>user_email</ColNames>
+      <UnderlyingIndexName>USER_EMAIL</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
