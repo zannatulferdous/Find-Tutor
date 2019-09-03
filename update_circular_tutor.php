@@ -22,6 +22,9 @@ include('config/db_connection.php');
         $STUDENT_LEVEL_NO=$_POST['STUDENT_LEVEL_NO'];
        $TUITION_SCHEDULE_NO=$_POST['TUITION_SCHEDULE_NO'];
        $SALARY_NO=$_POST['SALARY_NO'];
+       $SQL = "SELECT NATIONAL_ID_NUM FROM gen_tutor_circulars WHERE `NATIONAL_ID_NUM` = '$NATIONAL_ID_NUM' ";
+       $COUNT = mysqli_num_rows(mysqli_query($conn,$SQL));
+            if($COUNT < 1):
        if ($_FILES["NATIONAL_ID_IMAGE"]["error"] > 0) 
        {
             $NATIONAL_ID_IMAGE=$_POST['NATIONAL_ID_IMAGE'];
@@ -60,7 +63,10 @@ include('config/db_connection.php');
                     $mgs = "Update circular information Fail!";
                     $class = "red_color alert alert-warning alert-dismissable col-md-6";
                 }
-            
+             else:
+                $mgs = "This National ID Number is already taken,please try another!";
+                $class = "red_color alert alert-warning alert-dismissable col-md-8";
+            endif;
 }
  ?>
 <?php include("link.php"); ?>

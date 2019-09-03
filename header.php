@@ -53,7 +53,7 @@
             <div class="col-md-8 top-left">
                <ul>
                   <li><i class="fa fa-phone" aria-hidden="true"></i> +8801851875207</li>
-                  <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+                  <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@gmail.com</a></li>
                </ul>
             </div>
             <div class="col-md-3 top-middle">
